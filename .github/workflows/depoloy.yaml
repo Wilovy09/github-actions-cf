@@ -9,6 +9,7 @@ jobs:
   deploy-codigo:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: echo "Haciendo pull del código"
       - run: echo "Migrando..."
       - run: echo "Generando binarios..."
